@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Research Helper",
+  "description": "-",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_title": "Runtime Messaging"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/watch*",
+        "http://www.youtube.com/watch*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "message.bg.js",
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab"
+  ]
+}

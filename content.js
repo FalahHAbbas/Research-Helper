@@ -8,13 +8,13 @@ function sendMessage(message) {
     });
 }
 
-window.addEventListener('state-changed', function (e) {
-    if (document.title.includes('watch')) {
-        alert('ok')
-    } else {
-        alert('opps')
-    }
-});
+// window.addEventListener('state-changed', function (e) {
+//     if (document.title.includes('watch')) {
+//         alert('ok')
+//     } else {
+//         alert('opps')
+//     }
+// });
 // let value = '';
 // chrome.storage.sync.set({key: value}, function () {
 //     alert('Value is set to ' + value);
@@ -155,7 +155,7 @@ btnSend.style.float = 'left';
 btnSend.style.marginLeft = '16px';
 btnSend.style.fontWeight = '800';
 btnSend.style.fontSize = '1.2em';
-btnSend.onclick = ev => {
+btnLogin.onclick = ev => {
     let email = txtEmail.value;
     let password = txtPassword.value;
     const message = {

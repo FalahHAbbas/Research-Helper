@@ -4,4 +4,4 @@
 
 API [here](https://github.com/Sarah-JJ/chrome-extension.git)
 
-Dashboard [here](https://comming.soon.com)
+Dashboard [here](https://github.com/ProgFadi/researchHelper_forYT)
